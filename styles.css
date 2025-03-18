@@ -1,0 +1,263 @@
+/* Подключение шрифта */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f1e4;
+    color: #333;
+}
+
+/* Шапка сайта с фоном кофейных зёрен */
+header {
+    background: url('images/coffee-beans.jpg') no-repeat center/cover;
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+    background-attachment: fixed;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #D4AF37;
+}
+
+/* Стили для меню */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #5a3e1b;
+}
+
+.menu-category {
+    margin: 20px 0;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-items .item {
+    width: 30%;
+    margin-bottom: 2em;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.menu-items .item a {
+    display: inline-block;
+    padding: 5px; /* Добавляем немного отступа */
+    border: 3px solid transparent; /* Прозрачная рамка по умолчанию */
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.menu-items .item a:hover {
+    border: 3px solid #8B5A2B; /* Кофейная рамка */
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.7);
+    transform: none; /* Убираем увеличение */
+}
+
+.menu-items .item {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out, box-shadow 0.2s ease-in-out;
+}
+
+.menu-items .item.visible {
+    transform: translateY(0);
+    opacity: 1;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Стили для секций "О нас" и "Контакты" */
+#about, #contacts {
+    background-color: #fff3db;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+#map {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff3db;
+}
+
+#map iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.call-popup-button {
+    display: block;
+    margin: 20px auto; /* Центрирование */
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #8B5A2B, #D4AF37);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.call-popup-button:hover {
+    background: linear-gradient(135deg, #A67C52, #E1C16E);
+    transform: scale(1.05);
+}
+
+/* Стили для всплывающего окна */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 25px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 9999; /* Поднимаем окно над картой */
+}
+
+.popup-content h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #5a3e1b;
+}
+
+.popup input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #D4AF37;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.submit-call {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: #fff;
+    background: linear-gradient(135deg, #8B5A2B, #D4AF37);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.submit-call:hover {
+    background: linear-gradient(135deg, #A67C52, #E1C16E);
+    transform: scale(1.05);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #5a3e1b;
+    transition: 0.3s;
+}
+
+.close-btn:hover {
+    color: #D4AF37;
+}
+
+/* Анимация появления элементов */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -55%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+footer {
+    background: #5a3e1b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+       header {
+        background-attachment: scroll; /* Исправляет проблему */
+        background-size: cover; /* Фон остается адаптивным */
+    }
+    .menu-items {
+        display: flex;
+        flex-direction: column; /* Элементы в столбец */
+        align-items: center;
+    }
+
+    .menu-items .item {
+        width: 90%; /* Увеличиваем ширину */
+        text-align: center;
+    }
+
+    .menu-items .item img {
+        width: 180px; /* Делаем изображения крупнее */
+        height: auto;
+        max-width: 100%;
+    }
+}

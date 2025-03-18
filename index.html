@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best кOfейня - Кофейня и Пекарня</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Best кOfейня</h1>
+            <p>Кофейня и Пекарня в г. Кыштым</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#menu">Меню</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="fade-in">
+        <div class="container">
+            <h2>О нас</h2>
+            <p>Добро пожаловать в <strong>Best кOfейня</strong>! Наша кофейня-пекарня предлагает ароматный кофе, свежую выпечку, полуфабрикаты и комплексные обеды. Мы находимся в сердце Кыштыма по адресу ул. Ленина 6 и рады предложить Вам уютное место для отдыха.</p>
+        </div>
+    </section>
+
+<section id="menu" class="fade-in">
+    <div class="container">
+        <h2>Меню</h2>
+        <div class="menu-items">
+            <div class="item" class="fade-in">
+                <a href="https://docs.google.com/document/d/1stAboRqbtF5RCJfRsX6vEizMDI9EUH1OBDbKPP2tG-k/edit?tab=t.0" target="_blank">
+                    <img src="images/coffee.jpg" alt="Кофе">
+                </a>
+                <h3>Кофе</h3>
+                <p>Эспрессо, капучино, латте, американо и многое другое.</p>
+            </div>
+            <div class="item" class="fade-in">
+                <a href="https://docs.google.com/document/d/13TIKAiuQvkats2YYTWpcIMcn5mhdWenfFP_V778_XRA/edit?tab=t.0" target="_blank">
+                    <img src="images/bakery.jpg" alt="Выпечка">
+                </a>
+                <h3>Выпечка</h3>
+                <p>Круассаны, пироги, слойки и багеты, приготовленные с любовью.</p>
+            </div>
+            <div class="item" class="fade-in">
+                <a href="https://docs.google.com/document/d/1u2fSMAQs4kFAUD6MP6RFa2e8AgmIJWtmcUZDOAeACPc/edit?tab=t.0" target="_blank">
+                    <img src="images/snacks.jpg" alt="Закуски">
+                </a>
+                <h3>Десерты</h3>
+                <p>Торты, пирожные, печенье, трайфл.</p>
+            </div>
+            <div class="item" class="fade-in">
+                <a href="https://docs.google.com/document/d/1t_jGSlWHfCgg0L9YNfIfh9tj5dlDQpc-NNvc0ch-tqg/edit?tab=t.0" target="_blank">
+                    <img src="images/salads.jpg" alt="Салаты">
+                </a>
+                <h3>Салаты</h3>
+                <p>Сезонные овощные и мясные салаты для свежего перекуса.</p>
+            </div>
+            <div class="item" class="fade-in">
+                <a href="https://docs.google.com/document/d/1XCUokj1ovb6hoFmLfBm6br3NLewY5sdY-_hrO9V898A/edit?tab=t.0" target="_blank">
+                    <img src="images/bread.jpg" alt="Хлеба">
+                </a>
+                <h3>Хлеба</h3>
+                <p>Свежий хлеб, багеты и сдоба на каждый день.</p>
+            </div>
+            <div class="item" class="fade-in">
+                <a href="https://docs.google.com/document/d/1TpNqmLVKDJqqbzXMpg5GjRCzXVV0DkpSK3Xi3ZHzDQc/edit?tab=t.0" target="_blank">
+                    <img src="images/lunch.jpg" alt="Комплексные обеды">
+                </a>
+                <h3>Горячие блюда</h3>
+                <p>Супы, основные блюда с гарниром на выбор.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="contact" class="fade-in">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Адрес: ул. Ленина, 6, Кыштым</p>
+            <p>Телефон: <a href="tel:+79043084332">+7 (904) 308-43-32</a></p>
+            <p>Часы работы: Пн-Вс, 8:00 - 21:00</p>
+        </div>
+    </section>
+
+    <button class="call-popup-button">📞 Заказать звонок</button>
+
+<!-- Форма обратного звонка -->
+<div class="popup" id="callPopup">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Оставьте ваш номер</h2>
+        <input type="text" placeholder="Введите номер телефона">
+        <button class="submit-call">Отправить</button>
+    </div>
+</div>
+    
+    <section id="map" class="fade-in">
+    <div class="container">
+        <h2>Мы на карте</h2>
+        <div style="position:relative;overflow:hidden;">
+            <a href="https://yandex.ru/maps/org/best_kofeynya/169298887071/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Best кOfейня</a>
+            <a href="https://yandex.ru/maps/11210/kyshtym/category/coffee_shop/35193114937/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Кофейня в Кыштыме</a>
+            <a href="https://yandex.ru/maps/11210/kyshtym/category/canteen/184106396/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Столовая в Кыштыме</a>
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=60.542896%2C55.707524&mode=poi&poi%5Bpoint%5D=60.542122%2C55.707600&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D169298887071&z=19.56" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
+    </div>
+</section>
+    
+    <footer>
+        <p>© 2025 Best кOfейня - Кофейня и Пекарня. Все права защищены.</p>
+    </footer>
+
+    <script>
+document.querySelector('.call-popup-button').addEventListener('click', function() {
+    document.getElementById('callPopup').style.display = 'block';
+});
+
+document.querySelector('.close-btn').addEventListener('click', function() {
+    document.getElementById('callPopup').style.display = 'none';
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const menuItems = document.querySelectorAll(".menu-items .item");
+    const fadeElements = document.querySelectorAll(".fade-in:not(#about):not(#menu)"); 
+
+    function checkVisibility() {
+        menuItems.forEach((el, index) => {
+            const rect = el.getBoundingClientRect();
+            const delay = index * 200;
+
+            if (rect.top < window.innerHeight * 0.85) {
+                setTimeout(() => {
+                    el.classList.add("visible");
+                }, delay);
+            } else if (rect.bottom > window.innerHeight) {
+                setTimeout(() => {
+                    el.classList.remove("visible");
+                }, delay);
+            }
+        });
+
+        fadeElements.forEach((el) => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight * 0.85) {
+                el.classList.add("visible");
+            } else if (rect.bottom > window.innerHeight) {
+                el.classList.remove("visible");
+            }
+        });
+    }
+
+    // Отключаем эффект для секций "О нас" и "Меню" (заголовок)
+    document.querySelector("#about").classList.add("visible");
+    document.querySelector("#menu").classList.add("visible");
+    
+    window.addEventListener("scroll", checkVisibility);
+    checkVisibility(); // Запуск при загрузке
+});
+</script>
+    
+</body>
+</html>
