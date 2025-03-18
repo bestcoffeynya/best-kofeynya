@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/best-kofeynya/static/css/main.84685f01.css",
+    "main.js": "/best-kofeynya/static/js/main.6f5d1055.js",
+    "static/js/453.42badb87.chunk.js": "/best-kofeynya/static/js/453.42badb87.chunk.js",
+    "static/media/coffee-beans.jpg": "/best-kofeynya/static/media/coffee-beans.9b9b7e66450b7eff26e8.jpg",
+    "static/media/Montserrat-Regular.ttf": "/best-kofeynya/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
+    "index.html": "/best-kofeynya/index.html",
+    "main.84685f01.css.map": "/best-kofeynya/static/css/main.84685f01.css.map",
+    "main.6f5d1055.js.map": "/best-kofeynya/static/js/main.6f5d1055.js.map",
+    "453.42badb87.chunk.js.map": "/best-kofeynya/static/js/453.42badb87.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84685f01.css",
+    "static/js/main.6f5d1055.js"
+  ]
+}
